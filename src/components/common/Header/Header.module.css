@@ -1,0 +1,33 @@
+.header {
+  background-color: transparent;
+}
+
+.header .header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+@media (max-width: 1400px) {
+  .header .header_content {
+    padding: 20px;
+  }
+}
+
+.header .header_content .button {
+  padding: 8px 50px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header .header_content .icon {
+  font-size: 50px;
+}

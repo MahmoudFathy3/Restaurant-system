@@ -1,0 +1,63 @@
+.AddDelivery .AddDelivery_content {
+  width: 100%;
+}
+
+.AddDelivery .AddDelivery_content .form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  font-family: var(--font-family) !important;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .AddDelivery .AddDelivery_content .form {
+    grid-template-columns: auto;
+  }
+}
+
+.AddDelivery .AddDelivery_content form .FormControl {
+  gap: 10px;
+}
+
+.AddDelivery .AddDelivery_content form .FormControl input {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.AddDelivery .AddDelivery_content form .FormControl input:focus {
+  border-color: red;
+}
+
+.AddDelivery .AddDelivery_content .Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+.AddDelivery .AddDelivery_content .Buttons button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--text-white);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.AddDelivery .AddDelivery_content .Buttons button:first-of-type {
+  background-color: var(--color-primary);
+}
+
+.AddDelivery .AddDelivery_content .Buttons button:last-of-type {
+  background-color: var(--bg-delete);
+}
+
+.AddDelivery .AddDelivery_content .Buttons button:hover {
+  opacity: 1;
+}

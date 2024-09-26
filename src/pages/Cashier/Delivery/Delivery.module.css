@@ -1,0 +1,116 @@
+.Delivery {
+  background-color: #f9f9f9;
+}
+
+.Delivery .Delivery_content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Delivery .Delivery_content .header {
+  background-color: var(--color-primary);
+  display: flex;
+}
+
+.Delivery .Delivery_content .header .header_content {
+  display: flex;
+  align-items: center;
+  padding: 5px 50px;
+  width: 100%;
+}
+
+.Delivery .Delivery_content .header .header_content h3 {
+  font-size: 25px;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Delivery .Delivery_content .pathname {
+  padding: 10px 50px 30px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .Delivery .Delivery_content .pathname {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.Delivery .Delivery_content .pathname input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 2px solid #aaa;
+}
+
+.Delivery .Delivery_content .pathname input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.Delivery .Delivery_content .pathname input:focus::placeholder {
+  opacity: 0;
+}
+
+.Delivery .Delivery_content .pathname button {
+  padding: 8px;
+  background-color: var(--bg-button);
+  color: var(--text-white);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.Delivery .Delivery_content .pathname button:hover {
+  opacity: 1;
+}
+
+.Delivery .Delivery_content .table {
+  background-color: #fff;
+  box-shadow: var(--shadow-secondary);
+  overflow-x: auto;
+  margin: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .Delivery .Delivery_content .table {
+    margin: 0 20px;
+  }
+}
+
+/* goBack */
+.Delivery .Delivery_content .goBack {
+  margin-top: auto;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.Delivery .Delivery_content .goBack button {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Delivery .Delivery_content .goBack button:hover {
+  opacity: 1;
+}

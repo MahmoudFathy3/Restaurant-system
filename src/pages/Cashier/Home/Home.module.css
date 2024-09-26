@@ -1,0 +1,8 @@
+.home_content .content_wapper .wapperList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 14px;
+  border-radius: 16px;
+  padding: 0 5px 20px;
+}

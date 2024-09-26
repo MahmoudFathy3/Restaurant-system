@@ -1,0 +1,215 @@
+.Checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  padding: 0px;
+}
+
+@media (min-width: 991px) {
+  .Checkout {
+    width: 50%;
+    padding: 0px 0 20px 20px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .Checkout {
+    width: 40%;
+    padding: 0px 0 20px 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Checkout {
+    width: 35%;
+    padding: 0px 0 20px 20px;
+  }
+}
+
+.Checkout .Checkout_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px 25px 20px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .Checkout .Checkout_content {
+    margin: 0 20px;
+  }
+}
+
+.Checkout .Checkout_content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--bg-hr);
+}
+
+.Checkout .Checkout_content .title h3 {
+  font-size: 25px;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.Checkout .Checkout_content .title .icon {
+  font-size: 25px;
+  color: var(--bg-delete);
+  cursor: pointer;
+}
+
+.Checkout .Checkout_content .List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--bg-hr);
+}
+
+.Checkout .Checkout_content .List .item {
+  width: calc(95% / 5);
+  margin: auto;
+}
+
+.Checkout .Checkout_content .List .item button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.Checkout .Checkout_content .List .item button:hover {
+  opacity: 1;
+}
+
+.Checkout .Checkout_content .hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--bg-hr);
+  margin: 80px 0;
+}
+
+/* Product Checkout  */
+.Checkout .Checkout_content .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Checkout .Checkout_content .product .product_item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Checkout .Checkout_content .product .product_item:not(:last-of-type) {
+  border-bottom: 1px solid var(--bg-hr);
+}
+
+.Checkout .Checkout_content .product .product_item .item_name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Checkout .Checkout_content .product .product_item .item_name .item_icon {
+  color: var(--bg-delete);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Checkout .Checkout_content .total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+.Checkout .Checkout_content .total .total_wapper {
+  background: var(--bg-card);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Checkout .Checkout_content .total .total_wapper p {
+  font-weight: bold;
+}
+
+.Checkout .Checkout_content .total .total_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Checkout .Checkout_content .total .total_item :is(p, span) {
+  color: var(--text-primary);
+  font-weight: initial;
+}
+
+.Checkout .Checkout_content .total button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  font-size: 18px;
+  font-family: var(--font-family);
+  opacity: 0.9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Checkout .Checkout_content .total button:hover {
+  opacity: 1;
+}
+
+/* Buttons */
+
+.Checkout .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.Checkout .buttons button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(21, 90, 193, 1);
+  color: var(--text-white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.Checkout .buttons button:hover {
+  opacity: 1;
+}

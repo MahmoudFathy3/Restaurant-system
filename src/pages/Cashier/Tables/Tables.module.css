@@ -1,0 +1,119 @@
+.tables {
+  display: flex;
+  background-color: #eee;
+}
+
+.tablerMarge {
+  width: 90%;
+  margin: auto;
+}
+
+.tablerMarge.cashier {
+  width: calc(100% - 18%);
+}
+
+@media (max-width: 1200px) {
+  .tablerMarge.cashier {
+    width: 100%;
+  }
+}
+
+.tables .tablerMarge .tablerMarge_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.tables .tablerMarge .tablerMarge_header .tablerMarge_Length {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.tables .tablerMarge .tablerMarge_header .tablerMarge_Merge {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .tables .tablerMarge .tablerMarge_header .tablerMarge_Merge {
+    flex-direction: column-reverse;
+  }
+}
+
+.tables .tablerMarge .tablerMarge_header .tablerMarge_Merge .button {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: bold;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.tables .tablerMarge .tablerMarge_header .tablerMarge_Merge .button:hover {
+  opacity: 1;
+}
+
+/* Buttons Modal */
+.MergeInputs .form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  font-family: var(--font-family) !important;
+  width: 90%;
+}
+
+.MergeInputs form .FormControl {
+  gap: 10px;
+}
+
+.MergeInputs form .FormControl input {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.MergeInputs form .FormControl input:focus {
+  border-color: red;
+}
+
+.MergeInputs .Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+.MergeInputs button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--text-white);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.MergeInputs button:first-of-type {
+  background-color: var(--color-primary);
+}
+
+.MergeInputs button:last-of-type {
+  background-color: var(--bg-delete);
+}
+
+.MergeInputs button:hover {
+  opacity: 1;
+}

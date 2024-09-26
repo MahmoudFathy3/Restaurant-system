@@ -1,0 +1,96 @@
+.Customers {
+  background-color: #f9f9f9;
+}
+
+.Customers .Customer_content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Customers .Customer_content .header {
+  background-color: var(--color-primary);
+  display: flex;
+}
+
+.Customers .Customer_content .header .header_content {
+  display: flex;
+  align-items: center;
+  padding: 5px 50px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+.Customers .Customer_content .header .header_content {
+    padding: 5px 10px;
+  }
+}
+
+.Customers .Customer_content .header .header_content h3 {
+  font-size: 25px;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Customers .Customer_content .pathname {
+  padding: 10px 50px 30px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Customers .Customer_content .pathname input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 2px solid #aaa;
+}
+
+.Customers .Customer_content .pathname input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.Customers .Customer_content .pathname input:focus::placeholder {
+  opacity: 0;
+}
+
+.Customers .Customer_content .table {
+  background-color: #fff;
+  box-shadow: var(--shadow-secondary);
+  overflow-x: auto;
+  margin: 0 50px;
+}
+
+@media (max-width: 1200px) {
+  .Customers .Customer_content .table {
+    margin: 0 20px;
+  }
+}
+
+/* goBack */
+.Customers .Customer_content .goBack {
+  margin-top: auto;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.Customers .Customer_content .goBack button {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Customers .Customer_content .goBack button:hover {
+  opacity: 1;
+}

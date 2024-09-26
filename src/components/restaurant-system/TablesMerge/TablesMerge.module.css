@@ -1,0 +1,56 @@
+.Tables {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Tables .Tables_content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* List Tables */
+.Tables .Tables_content .ListTables {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.Tables .Tables_content .Tables_Table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Tables .Tables_content .Tables_Table .table_title h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Tables .Tables_content .Tables_Table .table_item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.Tables .Tables_content .Tables_Table .table_item .table_item_table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.Tables .Tables_content .Tables_Table .table_item .table_item_table h3 {
+  color: #444;
+  font-size: 16px;
+}
+
+.Tables .Tables_content .Tables_Table .table_item .table_item_table img {
+  width: 80px;
+  max-height: 229px;
+  object-fit: contain;
+}

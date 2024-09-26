@@ -1,0 +1,30 @@
+.AllItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AllItems .AllItems_content {
+  padding-top: 10px;
+}
+
+.AllItems .AllItems_content:not(:last-of-type) {
+  border-bottom: 1px solid var(--bg-hr);
+  padding-bottom: 10px;
+  padding-top: 0;
+}
+
+.AllItems .AllItems_content h3 {
+  color: var(--color-primary);
+  padding-bottom: 10px;
+}
+
+.AllItems_content .content_wapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 14px;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 0 5px 20px;
+}

@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #ee9350;
+  --color-secondary: #fbdfcb;
+  --text-primary: #525455;
+  --text-white: #ffffff;
+  --bg-card: rgba(217, 217, 217, 0.7);
+  --bg-hr: rgba(82, 84, 85, 0.3);
+  --bg-delete: rgba(248, 64, 64, 1);
+  --bg-button: rgba(21, 90, 193, 1);
+  --font-family: "Cairo", sans-serif;
+  --shadow-primary: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --shadow-secondary: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+body {
+  direction: rtl;
+  font-family: var(--font-family) !important;
+  background-color: #f9f9f9;
+  overflow: inherit !important;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container .content {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container .content {
+    width: calc(100% - 18%);
+  }
+}
+
+.container .content .content_wapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  padding: 15px;
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .container .content .content_wapper {
+    flex-direction: row-reverse;
+  }
+}
+
+/* section style all page layout */
+section {
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  section {
+    width: calc(100% - 50%);
+  }
+}
+
+@media (min-width: 1199px) {
+  section {
+    width: calc(100% - 40%);
+  }
+}
+
+@media (min-width: 1400px) {
+  section {
+    width: calc(100% - 35%);
+  }
+}
